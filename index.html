@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>People's Progressive League (PPL)</title>
+  <meta name="description" content="People's Progressive League - Leader: Veer Gulati, Co-Leader: Chirag Arora">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>PPL – People's Progressive League</h1>
+    <p>Building a better tomorrow with leadership and vision.</p>
+  </header>
+
+  <section class="hero">
+    <h2>Meet Our Leaders</h2>
+    <div class="leaders">
+      <div class="leader-card">
+        <img src="assets/veer_footballer.svg" alt="Veer Gulati">
+        <h3>Veer Gulati</h3>
+        <p><strong>Leader</strong> – Footballer, passionate about teamwork and discipline.</p>
+      </div>
+      <div class="leader-card">
+        <img src="assets/chirag_mathematician.svg" alt="Chirag Arora">
+        <h3>Chirag Arora</h3>
+        <p><strong>Co-Leader</strong> – Mathematician, driven by logic and problem-solving.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="mission">
+    <h2>Our Mission</h2>
+    <p>To create a fair, engaging, and progressive environment for every student through active participation, smart policies, and positive leadership.</p>
+  </section>
+
+  <section class="manifesto">
+    <h2>Our 10 Promises</h2>
+    <ul>
+      <li>Promote fairness and transparency in all class decisions.</li>
+      <li>Organize fun and educational activities every month.</li>
+      <li>Ensure every student's voice is heard and valued.</li>
+      <li>Encourage sports and physical fitness programs.</li>
+      <li>Support innovative ideas and reward creativity.</li>
+      <li>Strengthen class unity through regular feedback sessions.</li>
+      <li>Improve classroom resources for better learning.</li>
+      <li>Lead eco-friendly initiatives within school.</li>
+      <li>Resolve conflicts peacefully and fairly.</li>
+      <li>Represent the class with integrity and commitment.</li>
+    </ul>
+  </section>
+
+  <section class="join">
+    <h2>Join the Movement</h2>
+    <p>Support PPL to bring meaningful change and a brighter future for our class!</p>
+  </section>
+
+  <section class="like-section">
+    <button id="likeBtn">👍 Like</button> <span id="likeCount">0</span> Likes
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 People's Progressive League | Designed by the PPL Team</p>
+  </footer>
+
+  <script>
+    let count = 0;
+    const btn = document.getElementById('likeBtn');
+    const display = document.getElementById('likeCount');
+    btn.addEventListener('click', () => {
+      count++;
+      display.textContent = count;
+    });
+  </script>
+</body>
+</html>
